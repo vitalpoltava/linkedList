@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Linked list demo</title>
+</head>
+<body>
+
+<script type="module">
+    import LinkedList from './list.js';
+
+    const list = new LinkedList(1);
+
+    console.log(list.getFullList(),list.total);
+    list.removeFromTop();
+    console.log(list.getFullList(),list.total);
+    list.removeFromTop();
+    console.log(list.getFullList(),list.total);
+    list.addToTop(2)
+    console.log(list.getFullList(),list.total);
+    list.addToTop(3)
+    console.log(list.getFullList(),list.total);
+    list.removeFromBottom()
+    console.log(list.getFullList(),list.total);
+    list.removeFromBottom()
+    console.log(list.getFullList(),list.total);
+    list.removeFromBottom()
+    console.log(list.getFullList(),list.total);
+</script>
+
+</body>
+</html>
